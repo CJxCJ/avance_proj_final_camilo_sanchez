@@ -344,6 +344,7 @@ def jugar_2_jugadores():
 ## MODO EXTREMO (CONTRARELOJ): 
 
 Para el modo contrarreloj investigué Cómo hacer una cuenta regresiva donde utiliza la librería "THREADIND" dónde basándome en programas de internet cree dos variables globales dónde se mantiene desactivado por defecto el contador. Luego se creó una función que llame tiempo que servirá para determinar si el tiempo se agotó y detener el contador, donde su tiempo inicial será de 45 mientras el tiempo restante sea mayor a cero y no se llame a la variable de tener contador este se irá imprimiendo cada segundo y se irá restando uno al tiempo restante si llega a cero la variable de tiempo agotado se convierte en "True". 
+
 Ya cuando esto está definido en la función para jugar este modo se llaman y definen las variables iniciales y se pone a funcionar la cuenta regresiva [threading.Thread(target=tiempo)]. El código es el mismo que en el modo difícil simplemente que al momento de ganar o perder se detiene la cuenta regresiva.
 
 ````python
